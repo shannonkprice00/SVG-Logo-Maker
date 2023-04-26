@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/shannonkprice00/SVG-Logo-Maker#readme",
   "dependencies": {
-    "inquirer": "^9.2.0"
+    "inquirer": "^8.2.4"
   },
   "devDependencies": {
     "jest": "^29.5.0"
