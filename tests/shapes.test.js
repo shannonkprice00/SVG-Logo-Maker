@@ -1,4 +1,4 @@
-const Shape = require('../shapes');
+const Shape = require('../lib/shapes');
 
 describe('shapes', () => {
     it('should be a new instance of Shape', () => {
