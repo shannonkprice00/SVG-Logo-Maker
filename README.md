@@ -17,7 +17,7 @@ This project was created to quickly and efficiently create a simple logo so that
 To use this project, you will need to install inquirer as a dependency. You can do this by using the following command in the terminal: <br> `$ npm i` 
 
 ## Usage
-To view a video demonstration of the usage of this application, click [here.](https://drive.google.com/file/d/1qvgtfqmQ4W7kMKaEBqVBa6qLQGJA2r6D/view?usp=share_link) <br>
+To view a video demonstration of the usage of this application, click [here.](https://drive.google.com/file/d/1W7dOPyhy6bz7DE9HD3TMUF0AlgV_IYB4/view?usp=share_link) <br>
 To run the program, use the following command in the terminal:<br> `$ node index.js`<br>
 You will be prompted with several inputs to create your logo to your specifications. You will see 'Generated logo.svg' log to the console upon successful creation of your logo file. If unsuccessful, the program will console log the error. You can find your file in the examples folder. You can open it in a browser or preview to view your new logo. <br>
 <br> <img src="./images/Screenshot_1.png" style="border: 1px solid blue;" width=100% /> <br>
