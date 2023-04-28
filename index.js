@@ -9,22 +9,46 @@ const prompts = [
       type: 'input',
       message: 'Please enter the text you would like for your logo (up to 3 characters):',
       name: 'text',
+      validate: function (value) {
+        if (value.trim().length > 3) {
+          return "You must enter ONLY UP TO 3 characters."
+        } else if (value.trim().length < 1) {
+          return "You must enter text for your logo."
+        }
+        return true;
+      }
     },
     {
       type: 'input',
       message: 'Please enter the color you would like for your logo text (color keyword OR hexadecimal number):',
       name: 'textColor',
+      validate: function (input) {
+        const pattern = /^([a-z]+|\#[0-9a-f]{6})$/i;
+        if (pattern.test(input)) {
+          return true
+        } else {
+          return "Please enter a valid color (e.g. 'green' or '#2b2b2b')."
+        }
+      }
     },
     {
       type: 'list',
       message: 'Please choose a shape for your logo:',
-      choices: ["Circle", "Triangle", "Square"],
+      choices: ["Circle", "Triangle", "Square", "Oval", "Rounded-Rectangle"],
       name: 'shape',
     },
     {
         type: 'input',
         message: 'Please enter the color you would like for your logo shape (color keyword OR hexadecimal number):',
         name: 'shapeColor',
+        validate: function (input) {
+          const pattern = /^([a-z]+|\#[0-9a-f]{6})$/i;
+          if (pattern.test(input)) {
+            return true
+          } else {
+            return "Please enter a valid color (e.g. 'green' or '#2b2b2b')."
+          }
+        }
       },
   ]
   
